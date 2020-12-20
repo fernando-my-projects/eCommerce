@@ -1,6 +1,7 @@
 import React from "react";
 import data from "./data";
 
+/* Funcion that makes the render of the page */
 function App() {
   return (
     <div className="grid-container">
@@ -17,6 +18,7 @@ function App() {
       </header>
       <main>
         <div className="row center">
+          {/* Map all products */}
           {data.products.map((product) => (
             <div key={product._id} className="card">
               <a href={`/product/${product._id}`}>
